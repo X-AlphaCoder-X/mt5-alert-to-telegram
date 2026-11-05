@@ -1,0 +1,8 @@
+# Your settings hold your bot token and chat IDs in plain text. Never commit them.
+mt5_alert_to_telegram_settings.json
+mt5_alert_to_telegram_settings.json.*
+logs/
+__pycache__/
+*.pyc
+.venv/
+venv/

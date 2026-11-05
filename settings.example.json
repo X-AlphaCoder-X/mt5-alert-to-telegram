@@ -1,0 +1,33 @@
+{
+  "bot_token": "",
+  "channels": [
+    {
+      "name": "default",
+      "chat_id": "",
+      "bot_token": ""
+    }
+  ],
+  "sources": [
+    {
+      "name": "MetaTrader 5",
+      "exe": "C:\\Program Files\\MetaTrader 5\\terminal64.exe",
+      "log_dir": ""
+    }
+  ],
+  "routes": [
+    {
+      "source": "MetaTrader 5",
+      "channel": "default"
+    }
+  ],
+  "popup_enabled": true,
+  "log_enabled": false,
+  "recover_seconds": 60,
+  "window_title": "Alert",
+  "global_mode": true,
+  "keyword": "",
+  "require_text": "",
+  "poll_seconds": 0.15,
+  "send_on_update": true,
+  "send_existing_on_start": false
+}

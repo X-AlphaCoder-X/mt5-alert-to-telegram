@@ -1,0 +1,57 @@
+name: Bug report
+description: An alert wasn't sent, was sent twice, or the script fails
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Remove your chat IDs and any private alert text from the log lines you paste.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start MT5 and run.bat
+        2. Trigger an alert from ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: capture
+    attributes:
+      label: Capture mode
+      options:
+        - Popup only
+        - Experts log only
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Windows, Python and MetaTrader 5 versions
+      placeholder: Windows 11 24H2, Python 3.12, MT5 build from Help, About
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log lines
+      description: The matching lines from logs/log<date>.log. Bot tokens are already hidden there.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the open issues and this isn't one of them.
+          required: true
+        - label: I tested the chat with menu 10 and the test message arrived.
+          required: false
